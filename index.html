@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
     <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
-    <title>Sample1</title>
+    <title>Barangay Login QR Code</title>
 </head>
 
 
@@ -39,8 +39,8 @@
 
                         <div class="form-group">
                             <label class="text-white b h5 bold-text mb-30">Please Click Open Cam to Scan QR Code</label>
-                        <span name="text" id="text" readonly placeholder="Scan Now!" class="form-control"></span>
-                            <button class="h1 btn btn-primary text-center text-black form-control" onclick="startCam();">Scan Now!</button>
+                        <span name="text" id="text" readonly placeholder="Scan Now!"></span>
+                            <button class="h1 btn btn-primary text-center text-black form-control" onclick="startCam();">Open Cam</button>
 
                         </div>
 
@@ -85,14 +85,14 @@
                 // scanner.start(cameras[1]);
                 scanner.addListener('scan', function(c) {
                         if (c === 'vincent') {
-                            window.location = 'https://localhost/new1/homepage.html';
+                            window.location = 'https://vincefernandez.github.io/pages/homepage.html';
                             scanner.stop();
 
                         } else if (c === 'employee1') {
-                            window.location = 'https://localhost/new1/homepage.html';
+                            window.location = 'https://vincefernandez.github.io/pages/homepage.html';
                             scanner.stop();
                         } else if (c === 'employee2') {
-                            window.location = 'https://localhost/new1/homepage.html';
+                            window.location = 'https://vincefernandez.github.io/pages/homepage.html';
                             scanner.stop();
                         } else {
                             alert('No Qr Code Data ');
